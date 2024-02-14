@@ -1,0 +1,48 @@
+<div class="container mt-3">
+    <form>
+      <div class="row jumbotron box8">
+        <div class="col-sm-12 mx-t3 mb-4">
+          <h2 class="text-center text-info"></h2>
+        </div>
+        <br>
+        <h2 class="text-center text-info">Place Your Order</h2>
+        <div class="col-sm-6 form-group">
+          <label for="name-f">Full Name</label>
+          <input type="text" class="form-control" [(ngModel)]="orderObj.userName" name="fname" id="name-f" placeholder="Enter your first name." required>
+        </div>
+        
+        <div class="col-sm-6 form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" [(ngModel)]="orderObj.userEmail" name="email" id="email" placeholder="Enter your email." required>
+        </div>
+        
+        <div class="col-sm-6 form-group">
+          <label for="address-2">Address</label>
+          <input type="address" class="form-control" [(ngModel)]="orderObj.address" name="address" id="address-2" placeholder="Village/City Name." required>
+        </div>
+        <div class="col-sm-4 form-group">
+          <label for="State">State</label>
+          <input type="address" class="form-control" [(ngModel)]="orderObj.state" name="State" id="State" placeholder="Enter your state name." required>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="zip">Postal-Code</label>
+          <input type="zip" class="form-control" [(ngModel)]="orderObj.postalCode" name="Zip" id="zip" placeholder="Postal-Code." required>
+        </div>
+        
+       
+        <div class="col-sm-4 form-group">
+          <label for="tel">Phone</label>
+          <input type="tel" name="phone" class="form-control" [(ngModel)]="orderObj.contact" id="tel" placeholder="Enter Your Contact Number." required>
+        </div>
+        
+        <br><br><br>
+        
+  
+        <div class="col-sm-12 form-group mb-0">
+          <button class="btn btn-primary float-right" (click)="onSubmit()">Submit Order</button>
+        </div>
+        <br><br>
+      </div>
+      <br>
+    </form>
+  </div>

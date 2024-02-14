@@ -1,0 +1,39 @@
+<div class="parent">
+    <div class="container">
+        <div class="left-section"></div>
+        <div class="right-section">
+            <div class="login-container">
+                <form class="login-form">
+                    <h2 class="login-title"><i class="fas fa-user-circle"></i> Registration</h2>
+                    <div class="form-control">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" name="name" [(ngModel)]="registerObj.name" placeholder="Username" id="name" required>
+                    </div>
+                    <div class="form-control">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" name="email" [(ngModel)]="registerObj.email" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="form-control">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" name="password" [(ngModel)]="registerObj.password" placeholder="Password" id="password" >
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" class="checkbox-input">
+                        <span class="checkbox-custom"></span>
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    
+                    <div class="social-login">
+                        <i class="fab fa-google social-icon"></i>
+                        <i class="fab fa-facebook-f social-icon"></i>
+                        <i class="fab fa-twitter social-icon"></i>
+                    </div>
+                    <button type="button" (click)="registerUser()">Sign Up</button><br>
+                    <a class="" align="center" routerLink="/userlogin">User Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="" routerLink="/Allproducts">Home</a>
+          
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
